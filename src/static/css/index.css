@@ -1,0 +1,303 @@
+body {
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    margin: 10px auto;
+    color: #ffffff;
+    font-family: "Montserrat";
+    overflow-x: hidden;
+}
+
+.cabecalho {    
+    position: static;
+    margin-top: -7%;
+    font-size: 25px;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 2px solid rgb(253, 79, 11);
+}
+
+.cabecalho .contato {
+    position: static;
+    display: flex;
+    margin-top: -13%;
+    margin-left: 85%;
+    margin-bottom: 3%;
+}
+.cabecalho .contato :hover {
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.corpo {
+    margin-top: 1%;
+}
+
+.orange {
+    color: rgb(250, 90, 32);
+}
+
+.corpo .info {
+    font-size: 25px;
+    text-align: center;
+}
+
+.corpo .container {
+    font-size: 25px;
+    text-align: center;
+}
+
+.corpo .container .carrousel-container .carrousel .card-container {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;        
+    gap: 10px; 
+    margin: 0 auto; 
+    padding: 40px 30px;
+    font-size: 20px;
+}
+
+.corpo .container .card-container .titulogenero {   
+    position:relative;
+    font-size: 30px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+    color: rgb(250, 90, 32);
+}
+
+.corpo .container .card-container .card-list { 
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+    overflow-x: auto; 
+    padding: 50px 0; 
+    margin-left: 2%;
+    position: relative;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+
+.corpo .container .card-container .card {
+    flex-shrink: 0;
+    margin-top: 0%;
+    width: 200px; 
+    border-radius: 2%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.corpo .container .card-container .card:hover {
+    transform: scale(1.02); 
+} 
+
+.corpo .container .card-container .card img {
+    border: 1px solid rgba(250, 90, 32, 0.966);
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+    display: block;
+}
+
+.corpo .container .botao {
+    border: 0.5px solid rgb(250, 90, 32);
+    border-radius: 8%;
+    width: 2.5%;
+    font-size: 140%;
+    background-color: rgb(250, 90, 32);
+}
+
+.novo {
+    margin-top: 4%;
+}
+
+.corpo .container .botao:hover {
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+input {
+    border: 2px solid rgba(250, 90, 32, 0.966);
+    background: rgb(255, 97, 40);
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+input:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    background-color: rgba(250, 90, 32, 0.966);
+}
+
+.corpo .modal .conteudo-modal .close {
+    font-size: 25px;
+    border: 10px solid rgba(250, 90, 32, 0.966);
+    border-radius: 4%;
+    background-color: rgb(250, 90, 32);
+    color: black;
+}
+
+.corpo .modal .conteudo-modal .close:hover {
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+.corpo .modal .conteudo-modal .bot-envio {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    border-radius: 4%;
+    border: 9px solid rgb(250, 90, 32, 0.966);
+    background-color: rgb(250, 90, 32);
+    margin-top: 5px;
+}
+
+.seletor {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    border-radius: 2.5%;
+    border: 9px solid rgb(250, 90, 32, 0.966);
+    background-color: rgb(250, 90, 32);
+    margin-top: 5px;
+}
+
+.corpo .modal .conteudo-modal .bot-envio:hover {
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+.corpo .modal .conteudo-modal {
+    margin-top: -2%;
+}
+
+.corpo .container .carousel-container {
+    position: relative;
+    display: flex;
+    white-space: wrap;
+    overflow: hidden;
+    margin-top: 40px;
+    align-items: flex-start;
+    margin-left: 3.5%;
+    width: 93%;
+    margin:40px auto
+}
+
+.corpo .container .carousel-container .carousel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px; 
+    width: 100%;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-list::before,
+.card-list::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    z-index: 1000;
+    pointer-events: none;
+    left: 100%;
+}
+
+.card-list::before {
+    left: 0;
+    background: linear-gradient(to right, rgb(31, 31, 31) 0%, rgba(31, 31, 31, 0));
+}
+
+.card-list::after {
+    right: 0;
+    background: linear-gradient(to left, rgb(31, 31, 31) 10%, rgba(31, 31, 31, 0));
+
+}
+
+.card { 
+    flex-shrink: 0;
+    position: relative;
+    width: 200px;
+    border-radius: 2%;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card img:hover {
+    transform: scale(1.0);
+    box-shadow: 0 0 15px rgba(250, 90, 32, 0.966);
+}
+
+.card img {
+    border: 1px solid rgba(250, 90, 32, 0.966);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 3%;
+}
+
+.carousel button {
+    top: -5%;
+    position: absolute;
+    left: 85%;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(250, 90, 32);
+    background-color: rgb(255, 102, 46);
+    padding: 0px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.carousel button:hover {
+    color: #ffffff;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.lista {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 3%;
+    z-index: 0;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.rodape .txt .orange {
+    color: rgb(250, 90, 32);
+}
+
+.rodape .txt .orange:hover {
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+.rodape .txt {
+    border-top: 2px solid rgb(253, 79, 11);
+    margin-top: 3%;
+    text-align: center;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Painel</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/fonts/Montserrat-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="shortcut icon" href="/img/Removal-894.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="/img/Logo.png" alt="Logo cine painel" height="400px" length>
+        </div>
+        <div class="contato"><a href="mailto:eduardo4silvafontes@gmail.com"><span class="orange">Contate-me</span></a>
+        </div>
+    </header>
+    <main class="corpo">
+        <div class="info">
+            <h3 class="titulo">A MELHOR MANEIRA DE ORGANIZAR SUAS SÉRIES E FILMES</h2>
+                <p class="texto">Já pensou o quão ruim é escrever o nome de um filme ou série e esquecer onde anotou?
+                    <br> Por
+                    isto a <span class="orange">Cine Painel</span> foi criado! Para facilitar a sua organização.</p>
+        </div>
+        <div class="container">
+            <button id="add" class="botao">&#x2B9F;</button>
+            <div id="modal" class="modal">
+                <div class="conteudo-modal">
+                    <h5 class="novo">Adicionar novo Filme/Série</h5>
+                    <form id="cine-form">
+                        <label for="nome"></label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome do Filme" required>
+                        <label for="imagem"></label>
+                        <input type="url" name="imagem" id="imagem" placeholder="URL da Imagem">
+                        <select id="seletor" class="seletor" aria-label="Default select example">
+                            <option selected>Gênero da Obra</option>
+                            <option value="acao">Ação e aventura</option>
+                            <option value="drama">Drama</option>
+                            <option value="comediaromantica">Comédia romântica</option>
+                            <option value="ficcao">Ficção científica</option>
+                            <option value="terror">Terror</option>
+                            <option value="animacao">Animação</option>
+                            <option value="comedia">Comédia</option>
+                        </select>
+                        <span id="close-modal" class="close">Cancelar</span>
+                        <button type="submit" class="bot-envio">Adicionar</button>
+                    </form>
+                </div>
+            </div>
+            <h5 class="lista">Sua Lista:</h5>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="card-container">
+                        <h5 id="title-acao" class="titulogenero">Ação</h5>
+                        <div id="card-container-acao" class="card-list"></div>
+                    </div>
+                    <div class="card-container">
+                        <h5 id="title-drama" class="titulogenero">Drama</h5>
+                        <div id="card-container-drama" class="card-list"></div>
+                    </div>
+                    <div class="card-container">
+                        <h5 id="title-comediaromantica" class="titulogenero">Comédia romântica</h5>
+                        <div id="card-container-comediaromantica" class="card-list"></div>
+                    </div>
+                    <div class="card-container">
+                        <h5 id="title-ficcao" class="titulogenero">Ficção</h5>
+                        <div id="card-container-ficcao" class="card-list"></div>
+                    </div>
+                    <div class="card-container">
+                        <h5 id="title-terror" class="titulogenero">Terror</h5>
+                        <div id="card-container-terror" class="card-list"></div>
+                    </div>
+                    <div class="card-container">
+                        <h5 id="title-animacao" class="titulogenero">Animação</h5>
+                        <div id="card-container-animacao" class="card-list"></div>
+                    </div>
+                    <div class="card-container">
+                        <h5 id="title-comedia" class="titulogenero">Comédia</h5>
+                        <div id="card-container-comedia" class="card-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+    <footer class="rodape">
+        <div class="txt">
+            <p>Todos os direitos reservados: <a class="orange" href="https://github.com/DuuhZero">DuuhZero</a></p>
+        </div>
+    </footer>
+    <script src="/dist/index.js"></script>
+</body>
+
+</html>
