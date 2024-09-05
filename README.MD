@@ -63,7 +63,7 @@
   ```
 
 </details>
-
+<br>
 <details>
   <summary><b>Rodando Projeto</b></summary>
   Após a instalação das dependencias, você tem tudo necessário para rodar a aplicação.
