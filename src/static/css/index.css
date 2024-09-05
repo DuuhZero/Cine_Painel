@@ -6,10 +6,12 @@ body {
     font-family: "Montserrat";
     overflow-x: hidden;
 }
-
+.cabecalho .logo{
+    margin-top: 1%;
+}
 .cabecalho {    
     position: static;
-    margin-top: -7%;
+    margin-top: -8%;
     font-size: 25px;
     align-items: center;
     padding: 0 80px;
@@ -19,7 +21,7 @@ body {
 .cabecalho .contato {
     position: static;
     display: flex;
-    margin-top: -13%;
+    margin-top: -12%;
     margin-left: 85%;
     margin-bottom: 3%;
 }
@@ -65,7 +67,7 @@ a {
 .corpo .container .card-container .titulogenero {   
     position:relative;
     font-size: 30px;
-    margin-top: 0%;
+    margin-top: -0.5%;
     margin-bottom: 0%;
     text-align: left;
     color: rgb(250, 90, 32);
@@ -77,7 +79,7 @@ a {
     flex-direction: row; 
     gap: 10px; 
     overflow-x: auto; 
-    padding: 50px 0; 
+    padding: 45px 0; 
     margin-left: 2%;
     position: relative;
     box-sizing: border-box;
@@ -87,7 +89,7 @@ a {
 
 .corpo .container .card-container .card {
     flex-shrink: 0;
-    margin-top: 0%;
+    margin-top: -1%;
     width: 200px; 
     border-radius: 2%;
     box-sizing: border-box;
@@ -109,8 +111,8 @@ a {
 .corpo .container .botao {
     border: 0.5px solid rgb(250, 90, 32);
     border-radius: 8%;
-    width: 2.5%;
-    font-size: 140%;
+    width: 3%;
+    font-size: 160%;
     background-color: rgb(250, 90, 32);
 }
 
@@ -131,7 +133,7 @@ input {
     border-radius: 1%;
     display: flex;
     flex-direction: column;
-    padding: 5px; 
+    padding: 5px 115px; 
     max-width: 500px;
     margin: 0 auto;
     margin-top: 5px;
@@ -223,7 +225,7 @@ input:hover {
 
 .card-list::before {
     left: 0;
-    background: linear-gradient(to right, rgb(31, 31, 31) 0%, rgba(31, 31, 31, 0));
+    background: linear-gradient(to right, rgb(31, 31, 31) -10%, rgba(31, 31, 31, 0));
 }
 
 .card-list::after {
@@ -235,7 +237,7 @@ input:hover {
 .card { 
     flex-shrink: 0;
     position: relative;
-    width: 200px;
+    width:200px;
     border-radius: 2%;
     box-sizing: border-box;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -281,7 +283,7 @@ input:hover {
 .lista {
     font-size: 30px;
     text-transform: uppercase;
-    margin-top: 3%;
+    margin-top: 4%;
     z-index: 0;
     text-align: left;
     margin-left: 4%;
